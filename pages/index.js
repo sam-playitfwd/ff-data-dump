@@ -82,7 +82,7 @@ export default function Home() {
       // setisLoading(false);
     }
   };
-  var dump = new cronScheduler("0 30 * * * *", () => {
+  var dump = new cronScheduler("0 */2 * * * *", () => {
     getPegaxyData();
   });
   dump.start();
@@ -96,25 +96,3 @@ export default function Home() {
     </div>
   );
 }
-
-// dataDump.get().then(async (docExist) => {
-//   if (docExist) {
-
-//   } else {
-//
-//     console.log("created");
-//   }
-// });
-
-// await set(
-//   ref(db, "Games/weVihfU4bEo2WfC42mYz/dataDump/" + DateToDecimal),
-//   {
-//     created: serverTimestamp(new Date()),
-//     status: "unsucessful",
-//   }
-// );
-// await setDoc(doc(dataDump, DateToDecimal), {
-//   created: serverTimestamp(new Date()),
-//   status: "sucessful",
-// });
-// setReload(!reload);
