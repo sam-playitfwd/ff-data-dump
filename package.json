@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.27.0",
+    "cron": "^1.8.2",
+    "firebase": "^9.6.11",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
